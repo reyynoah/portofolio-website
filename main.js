@@ -54,3 +54,4 @@ ScrollReveal().reveal(".contact-container .form-container button", { delay: 500,
 ScrollReveal().reveal(".text", { delay: 300, origin: "right", interval: 100 });
 ScrollReveal().reveal(".contact-container", { delay: 200, origin: "bottom", interval: 200 });
 ScrollReveal().reveal(".maps-image", { delay: 200, origin: "bottom", interval: 200 });
+ScrollReveal().reveal(".skills-grid", { delay: 200, origin: "bottom", interval: 200 });
