@@ -516,125 +516,75 @@ span{
   }
   
   
-  /* =========================
-        Mobile Styles
+ /* =========================
+   Mobile (Responsif)
 ========================= */
-
-/* Mobile (≤429px) */
-@media (max-width: 429px) {
-  /* Header & Navigation */
-  .logo {
-    font-size: 1.8rem;
-  }
-  #menu-icon {
-    margin-left: -30rem;
-    font-size: 2rem;
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 1rem 2rem;
   }
 
-  /* Home Section */
-  .home-img {
-    margin-top: 8rem;
-    margin-right: -3.5rem;
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
   }
+
+  section.home {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 10rem;
+  }
+
+  .home-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .home-text p {
+    font-size: 1rem;
+  }
+
   .home-img img {
-    width: 65vw;
-  }
-  .home-content h1 {
-    font-size: 2rem;
-  }
-  .home-content h3 {
-    font-size: 1.6rem;
+    width: 80vw !important;
+    margin-top: 2rem;
   }
 
-  /* Social Media */
-  .social-media {
-    margin-left: 1rem;
-    margin-bottom: -1rem;
-  }
-  .social-media a {
-    width: 3.5rem;
-    height: 3.5rem;
-    margin-left: 0.8rem;
-    font-size: 2rem;
-  }
-
-  /* Buttons */
   .btn {
-    font-size: 1.5rem;
-  }
-
-  /* About Section */
-  .about-img img {
-    width: 45vw;
-    margin-top: -10rem;
-  }
-  .about-content p,
-  .services-box p {
+    padding: 0.8rem 1.5rem;
     font-size: 1rem;
-  }
-
-  /* Portfolio */
-  .portfolio-container {
-    grid-template-columns: repeat(1, 1fr);
-    height: 1600px;
-    gap: 1.4rem;
-  }
-
-  /* Contact Form */
-  .contact form .input-box input,
-  .contact form textarea {
-    font-size: 1rem;
-  }
-  .contact form textarea {
-    height: 20rem;
-  }
-
-  /* Footer */
-  .footer-text p {
-    font-size: 0.9rem;
   }
 }
 
-/* Small Mobile (≤391px) */
-@media (max-width: 391px) {
-  /* Home Section */
-  .home-content h1 {
-    line-height: 2;
+/* =========================
+   HP Kecil (≤ 429px)
+========================= */
+@media (max-width: 429px) {
+  body {
+    background: #f4efe6 !important; /* test responsif */
   }
-  .home-content h3 {
+
+  header {
+    padding: 0.8rem 1rem;
+  }
+
+  .logo {
     font-size: 1.4rem;
   }
 
-  /* Social Media */
-  .social-media a {
-    margin-left: 0.1rem;
-    font-size: 1.6rem;
+  .navbar a {
+    font-size: 0.9rem;
   }
 
-  /* Buttons */
-  .btn {
-    font-size: 1.2rem;
+  .home-text h1 {
+    font-size: 1.8rem;
   }
 
-  /* Contact Form */
-  .contact form textarea {
-    height: 15rem;
-  }
-  .contact form .btn {
-    margin-top: 1.3rem;
-    font-size: 1.2rem;
+  .home-text p {
+    font-size: 0.95rem;
   }
 
-  /* Footer */
-  .footer-text p {
-    font-size: 0.8rem;
-  }
-  .footer-iconTop a i {
-    font-size: 1rem;
-  }
-}
-@media (max-width: 429px) {
-  body {
-    background: red !important;
+  .home-img img {
+    width: 85vw !important;
   }
 }
